@@ -1,6 +1,12 @@
 // mongoose dependency
 const { Schema, model } = require('mongoose');
 
+// date formatting
+const dateFormat = require('../utils/dateFormat');
+
+// reaction schema
+const ReactionSchema = require('./Reaction');
+
 // thought schema
 const ThoughtSchema = new Schema(
     {
@@ -20,7 +26,7 @@ const ThoughtSchema = new Schema(
             required: 'username is required'
         },
         reactions: [
-            
+            ReactionSchema
         ],
     },
     {
