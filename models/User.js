@@ -1,6 +1,7 @@
 // mongoose dependency
 const { Schema, model } = require('mongoose');
 
+// user schema
 const UserSchema = new Schema(
     {
         username: {
@@ -21,7 +22,7 @@ const UserSchema = new Schema(
         thoughts: [
             {
                 type: Schema.Types.ObjectId,
-                ref: 'Thoughts'
+                ref: 'Thought'
             }
         ],
         friends: [
@@ -38,10 +39,13 @@ const UserSchema = new Schema(
 	}
 );
 
+// virtual for count of friends
 UserSchema.virtual('friendCount').get(function () {
     return this.friends.length;
 });
 
+// user model
 const User = model('User', UserSchema);
 
+// export
 module.exports = User;
