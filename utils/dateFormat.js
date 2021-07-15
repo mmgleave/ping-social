@@ -1,4 +1,4 @@
-// entirety of this file taken from uubc module 18
+// entirety of this file taken from UUBC module 18
 const addDateSuffix = date => {
     let dateStr = date.toString();
   
