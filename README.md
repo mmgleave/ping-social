@@ -2,10 +2,10 @@
 A Social Network NoSQL API
 
 ## Table of Contents
--[Description]($description)
--[Walkthrough]($walkthrough)
--[Usage]($usage)
--[Author]($author)
+[Description]($description)<br>
+[Walkthrough]($walkthrough)<br>
+[Usage]($usage)<br>
+[Author]($author)
 
 ## Description
 ### An API for a social network application where users can share their thoughts, react to friends' thoughts, and create a friend list. 
@@ -13,8 +13,8 @@ A Social Network NoSQL API
 - _[View Project on GitHub](http://github.com/mmgleave/ping-social)_
 
 ## Walkthrough
-### for a walkthrough video visit: 
-_[Walkthough Video]($)_
+### For a walkthrough video visit: 
+- _[Walkthough Video]($https://drive.google.com/file/d/1ZnifpbLTabw3JsQU1WkBZvdFSGwvl8Id/view)_
 
 ## Usage
 - Clone the repository 
@@ -26,5 +26,5 @@ _[Walkthough Video]($)_
 
 ## Author
 ### Michelle Gleave 
-_[GitHub](https://github.com/mmgleave/)_
+_Visit my [GitHub](https://github.com/mmgleave/)_<br>
 _If you have any questions please feel free to reach out to me at: <a href='mailto:mmgleave@gmail.com.com'></i>My Email</a>_
