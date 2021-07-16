@@ -1,5 +1,5 @@
 // mongoose dependency
-const { Schema, model } = require('mongoose');
+const { Schema, Types } = require('mongoose');
 
 // date formatting
 const dateFormat = require('../utils/dateFormat');

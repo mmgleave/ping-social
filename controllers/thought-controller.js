@@ -78,11 +78,12 @@ const thoughtController = {
         Thought
             .findOneAndDelete({ _id: params.id })
             .then(dbThoughtData => {
-                console.log(dbThoughtData)
+                res.json(dbThoughtData)
             })
             .catch(err => {
                 console.log(err)
                 res.json(err)
+                return;
             });
     },
 
@@ -92,13 +93,14 @@ const thoughtController = {
             .findOneAndUpdate(
                 { _id: params.id },
                 { $addToSet: { reactions: body }},
-                { new: true }
+                { new: true, runValidators: true }
             )
-            .then(dbThoughtData => {
-                if(!dbThoughtData) {
+            .then(dbReactionData => {
+                if(!dbReactionData) {
                     res.status(404).json({ message: 'Reaction creation not successful'});
                     return;
                 }
+                res.json(dbReactionData)
             })
             .catch(err => {
                 console.log(err)
@@ -114,11 +116,12 @@ const thoughtController = {
                 { $pull: { reactions: { reactionId: params.reactionId }}},
                 { new: true }
             )
-            .then(dbThoughtData => {
-                if(!dbThoughtData) {
+            .then(dbReactionData => {
+                if(!dbReactionData) {
                     res.status(404).json({ message: 'No thought found with that id'});
                     return;
                 }
+                res.json(dbReactionData)
             })
             .catch(err => {
                 console.log(err)
