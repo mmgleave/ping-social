@@ -14,7 +14,7 @@ A Social Network NoSQL API
 
 ## Walkthrough
 ### For a walkthrough video visit: 
-- _[Walkthough Video]($https://drive.google.com/file/d/1ZnifpbLTabw3JsQU1WkBZvdFSGwvl8Id/view)_
+- _[Walkthough Video](https://drive.google.com/file/d/1ZnifpbLTabw3JsQU1WkBZvdFSGwvl8Id/view)_
 
 ## Usage
 - Clone the repository 
